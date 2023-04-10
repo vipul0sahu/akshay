@@ -10,18 +10,22 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Caveat&family=League+Script&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Mrs+Saint+Delafield&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');
 
 
         body {
             background-color: rgb(0, 0, 0);
             color: beige;
             animation: transitionIn 0.75s;
-            
-            
-            
+
+
         }
 
         @keyframes transitionIn {
@@ -43,14 +47,14 @@
             border-bottom: 2px solid rgb(255, 255, 255);
             border-bottom-style: dashed;
             justify-content: space-around;
-            
+
         }
 
         header p {
             text-transform: capitalize;
             font-size: 22px;
             font-family: 'Caveat', cursive;
-            color: rgb(0, 255, 221);
+            color: rgb(223, 113, 175);
         }
 
         nav li {
@@ -58,7 +62,7 @@
             text-transform: uppercase;
             font-size: 28px;
             font-family: 'Amatic SC', cursive;
-            
+
 
         }
 
@@ -69,7 +73,7 @@
 
         .details {
 
-            
+
             text-align: center;
             margin: auto;
             width: 20rem;
@@ -77,19 +81,34 @@
 
         .details h2 {
 
-            font-family: 'Mrs Saint Delafield', cursive;
+            font-family: 'Alumni Sans Pinstripe', sans-serif;
             font-size: 36px;
             text-transform: capitalize;
+            font-weight: lighter;
             color: azure;
 
         }
 
-        .details p {
+        .text-a {
 
-            font-family: 'Kaushan Script', cursive;
-            font-size: 22px;
+            font-family: 'Gruppo', cursive;
+            font-size: 14px;
+            text-transform: uppercase;
+
+
+        }
+
+        .text-b {
+
+            font-family: 'Josefin Slab', serif;
+            font-size: 28px;
             
             
+        }
+
+        .text-c {
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             font-size: 18px;
         }
 
         .images {
@@ -98,28 +117,23 @@
             border-bottom-style: dotted;
             padding-bottom: 3rem;
             padding-top: 1rem;
+            text-align: center;
+            
+            
         }
 
 
 
-        img {
+        .Artist {
             width: 184.5px;
             height: 276.75px;
-            border-radius: 2rem;
-            box-shadow: 0px 0px 20px rgb(0, 255, 221) ;
+            box-shadow: 0px 0px 40px rgb(223, 113, 175);
             margin-top: 2rem;
+            
         }
 
         figcaption {
-            text-transform: uppercase;
-            position: relative;
-            bottom: 9rem;
-            left: 9rem;
-            font-size: 30px;
-            font-family: 'Bangers', cursive;
-            color: azure;
-            width: 50px;
-            
+            margin-top: 1rem;
             
         }
 
@@ -127,10 +141,8 @@
             margin-top: 2rem;
             text-transform: capitalize;
             text-align: center;
-            
-        }
 
-        
+        }
     </style>
 </head>
 
@@ -155,43 +167,21 @@
 
             <article class="details">
 
-                <h2>capture</h2>
-
-                <p>My work is an expression of what I am most passionate about: storytelling, simplicity and human
-                    interaction.</p>
+                <h2>i'm akshay</h2>
+                <p class="text-a">the person behind the lens</p>
+                <p class="text-b">A portrait and lifestyle photographer with an editorial approach, based in Banji, India</p>
+                <p class="text-c"> I see beauty in everything, everyone. Do you feel the same way?</p>
 
             </article>
 
             <article class="images">
-                <figure data-aos="fade-up">
-                    <img src="images/potrait 1.jpg" alt="potrait">
-                    <figcaption data-aos="fade-left">the shots</figcaption>
+                <figure>
+                    <img data-aos="zoom-out" class ="Artist" src="images/artist.jpg" alt="potrait">
+                    <figcaption><a href="https://instagram.com/07sahu_?igshid=YmMyMTA2M2Y="><img src="images/instagram.png"></a></figcaption>
                 </figure>
 
-                <figure data-aos="fade-up">
-                    <img src="images/potrait 2.jpg" alt="potrait">
-                    <figcaption data-aos="fade-left">the shots</figcaption>
-                </figure>
+                
 
-                <figure data-aos="fade-up">
-                    <img src="images/potrait 3.jpg" alt="potrait">
-                    <figcaption data-aos="fade-left">the shots</figcaption>
-                </figure>
-
-                <figure data-aos="fade-up">
-                    <img src="images/potrait 4.jpg" alt="potrait">
-                    <figcaption data-aos="fade-left">the shots</figcaption>
-                </figure>
-
-                <figure data-aos="fade-up">
-                    <img src="images/potrait 5.jpg" alt="potrait">
-                    <figcaption data-aos="fade-left">the shots</figcaption>
-                </figure>
-
-                <figure data-aos="fade-up">
-                    <img src="images/potrait 6.jpg" alt="potrait">
-                    <figcaption data-aos="fade-left">the shots</figcaption>
-                </figure>
             </article>
 
         </section>
@@ -201,7 +191,7 @@
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 
 </body>
